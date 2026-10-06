@@ -14,6 +14,7 @@ const withLineBreaks = (text) =>
   ))
 
 // size and weight map to the fs{n} and fw{n} classes in style.module.css.
+// size can also be a variant string, e.g. "16to12".
 export default function Title({
   tag: Tag = 'h2',
   font = 'satoshi',

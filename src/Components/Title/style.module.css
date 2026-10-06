@@ -42,7 +42,8 @@
 }
 
 /* Font size */
-.fs16 {
+.fs16,
+.fs16to12 {
     font-size: 16px;
     line-height: 1.375;
 }
@@ -72,6 +73,14 @@
 }
 
 @media (max-width: 768px) {
+    .fs16 {
+        font-size: 14px;
+    }
+
+    .fs16to12 {
+        font-size: 12px;
+    }
+
     .fs40 {
         font-size: 24px;
     }

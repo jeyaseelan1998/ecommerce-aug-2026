@@ -1,15 +1,19 @@
 import { useEffect, useRef, useState } from 'react'
 import Skeleton from '../Skeleton'
+import Loader from '../Loader'
 
 import style from './style.module.css'
 
+// `placeholder` picks what shows while the image loads: 'skeleton', 'spinner' or 'none'.
 export default function Image({
   image,
   alt,
   background = false,
   className,
   rootMargin = '200px',
+  placeholder = 'skeleton',
   children,
+  spinnerColor,
 }) {
   const src = image?.url
   const ratio = image?.width && image?.height ? (image.height * 100) / image.width : null
@@ -83,7 +87,11 @@ export default function Image({
         />
       ))}
 
-      {src && !loaded && !failed && <Skeleton fill />}
+      {src && !loaded && !failed && (
+        placeholder === 'skeleton' ? <Skeleton fill />
+          : placeholder === 'spinner' ? <Loader center className={style.spinner} color={spinnerColor} />
+            : null
+      )}
 
       {children && <div className={style.content}>{children}</div>}
     </div>

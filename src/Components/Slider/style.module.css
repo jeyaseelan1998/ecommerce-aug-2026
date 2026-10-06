@@ -1,0 +1,13 @@
+.slider {
+    width: 100%;
+}
+
+/* Lets slidesPerView="auto" size each slide to its content. */
+.slide {
+    width: auto;
+}
+
+/* Constant speed with no easing between slides. */
+.marquee {
+    --swiper-wrapper-transition-timing-function: linear;
+}

@@ -11,3 +11,17 @@
 .image {
     height: 100%;
 }
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .right {
+        margin-inline: -16px;
+    }
+}

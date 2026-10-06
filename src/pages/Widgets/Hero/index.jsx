@@ -23,7 +23,7 @@ export default function Hero({ title, text, image = null, stats = null }) {
               {text}
             </Title>
             <Spacer size={32} />
-            <Button>
+            <Button className={style.button}>
               Shop Now
             </Button>
             {

@@ -1,4 +1,5 @@
 import Hero from "./Hero";
+import Brands from "./Brands";
 
 export default function WidgetBuilder({ widgets = null }) {
     return (
@@ -8,6 +9,10 @@ export default function WidgetBuilder({ widgets = null }) {
 
                     if (data?.type === 'hero') {
                         return <Hero {...data} key={idx} />
+                    }
+
+                    if (data?.type === 'brands') {
+                        return <Brands {...data} key={idx} />
                     }
 
                     return null;

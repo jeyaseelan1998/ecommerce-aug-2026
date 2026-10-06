@@ -17,3 +17,59 @@
 .size16 {
     padding-top: 16px;
 }
+
+@media (max-width: 1240px) {
+    .size100 {
+        padding-top: 90px;
+    }
+
+    .size48 {
+        padding-top: 42px;
+    }
+
+    .size32 {
+        padding-top: 28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .size100 {
+        padding-top: 75px;
+    }
+
+    .size48 {
+        padding-top: 36px;
+    }
+
+    .size32 {
+        padding-top: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .size100 {
+        padding-top: 60px;
+    }
+
+    .size48 {
+        padding-top: 30px;
+    }
+
+    .size32 {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .size100 {
+        padding-top: 50px;
+    }
+
+    .size48 {
+        padding-top: 24px;
+    }
+
+    .size32 {
+        padding-top: 18px;
+    }
+}

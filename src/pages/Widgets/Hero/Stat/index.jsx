@@ -10,7 +10,7 @@ export default function Stat({ end, suffix = "+", label }) {
     <div className={style.stat}>
       <Counter end={end} suffix={suffix} />
       <Spacer size={4} />
-      <Title tag="p" className={style.label}>
+      <Title tag="p" className={style.label} size="16to12">
         {label}
       </Title>
     </div>

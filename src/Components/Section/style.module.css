@@ -5,3 +5,7 @@
 .grey {
     background-color: var(--grey);
 }
+
+.black {
+    background-color: var(--black);
+}

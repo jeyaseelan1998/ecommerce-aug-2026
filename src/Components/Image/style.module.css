@@ -38,3 +38,8 @@
     inset: 0;
     z-index: 1;
 }
+
+/* Drops the Loader's own vertical padding so it centres on the image. */
+.wrapper .spinner {
+    padding-block: 0;
+}

@@ -1,0 +1,17 @@
+.wrapper {
+    padding-block: 40px;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    height: 36px;
+}
+
+.logo {
+    max-height: 36px;
+}
+
+.logo img {
+    object-fit: contain;
+}
