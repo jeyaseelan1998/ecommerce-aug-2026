@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding-block: 1.5rem;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Centres the spinner in a viewport-sized area, e.g. while a page loads. */
+.fullScreen {
+    align-items: center;
+    min-height: 100dvh;
+    min-width: 100dvw;
+    padding-block: 0;
+}

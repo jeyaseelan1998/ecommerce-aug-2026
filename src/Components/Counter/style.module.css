@@ -1,0 +1,5 @@
+.counter {
+    display: inline-block;
+    /* Keeps digits the same width so the text doesn't jitter while counting. */
+    font-variant-numeric: tabular-nums;
+}

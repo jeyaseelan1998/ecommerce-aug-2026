@@ -1,0 +1,92 @@
+.button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid transparent;
+    border-radius: 62px;
+    font-family: var(--satoshi);
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.loading {
+    cursor: progress;
+}
+
+.label {
+    display: inherit;
+    align-items: inherit;
+    gap: inherit;
+    visibility: hidden;
+}
+
+/* Beats the Loader's own padding without depending on stylesheet order. */
+.button .spinner {
+    padding-block: 0;
+}
+
+/* Size */
+.small {
+    height: 40px;
+    padding-inline: 24px;
+    font-size: 14px;
+}
+
+.medium {
+    height: 52px;
+    padding-inline: 54px;
+    font-size: 16px;
+}
+
+.large {
+    height: 60px;
+    padding-inline: 64px;
+    font-size: 18px;
+}
+
+/* Color */
+.black {
+    background-color: var(--black);
+    border-color: var(--black);
+    color: var(--white);
+}
+
+.black:hover:not(.disabled, .loading) {
+    background-color: var(--darkGrey);
+    border-color: var(--darkGrey);
+}
+
+.white {
+    background-color: var(--white);
+    border-color: var(--border);
+    color: var(--black);
+}
+
+.white:hover:not(.disabled, .loading) {
+    background-color: var(--grey);
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .medium,
+    .large {
+        padding-inline: 32px;
+    }
+}

@@ -1,0 +1,88 @@
+.title {
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Font family */
+.integralCF {
+    font-family: var(--integralCF);
+}
+
+.satoshi {
+    font-family: var(--satoshi);
+}
+
+/* Font weight */
+.fw300 {
+    font-weight: 300;
+}
+
+.fw400 {
+    font-weight: 400;
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.fw600 {
+    font-weight: 600;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.fw800 {
+    font-weight: 800;
+}
+
+.fw900 {
+    font-weight: 900;
+}
+
+/* Font size */
+.fs16 {
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+.fs40 {
+    font-size: 40px;
+}
+
+.fs64 {
+    font-size: 64px;
+}
+
+@media (max-width: 1240px) {
+    .fs64 {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .fs40 {
+        font-size: 32px;
+    }
+
+    .fs64 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fs40 {
+        font-size: 24px;
+    }
+
+    .fs64 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    .fs64 {
+        font-size: 36px;
+    }
+}

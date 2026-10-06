@@ -1,0 +1,7 @@
+.section {
+    position: relative;
+}
+
+.grey {
+    background-color: var(--grey);
+}

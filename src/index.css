@@ -1,3 +1,17 @@
+:root {
+  --integralCF: "Integral CF", "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  --satoshi: "Satoshi", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --black: #000000;
+  --white: #FFFFFF;
+  --grey: #F2F0F1;
+  --darkGrey: #333333;
+  --textMuted: rgba(0, 0, 0, 0.6);
+  --border: rgba(0, 0, 0, 0.1);
+  --skeleton: #E4E1E2;
+  --skeletonWave: rgba(255, 255, 255, 0.6);
+}
+
 *,
 *::before,
 *::after {
