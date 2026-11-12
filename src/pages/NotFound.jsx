@@ -18,13 +18,15 @@ function NotFound() {
       <Meta title="Page not found" description="The page you are looking for doesn't exist." />
       <Section background="grey" className={style.section}>
         <Container className={style.container}>
-          <Image image={IMAGE} alt="A sad empty shopping cart" className={style.image} />
+          <div className={style.image}>
+            <Image image={IMAGE} alt="A sad empty shopping cart" />
+          </div>
           <Spacer size={32} />
-          <Title tag="h1" font="integralCF" size={64} weight={700}>
+          <Title tag="h1" size={64} weight={900}>
             404
           </Title>
           <Spacer size={16} />
-          <Title tag="h2" font="integralCF" size={24} weight={700}>
+          <Title tag="h2" size={24} weight={900}>
             Oops! This page is empty
           </Title>
           <Spacer size={16} />

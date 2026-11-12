@@ -15,8 +15,6 @@
 .image {
     width: 100%;
     max-width: 420px;
-    border-radius: 50%;
-    overflow: hidden;
 }
 
 .text {
