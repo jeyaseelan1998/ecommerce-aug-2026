@@ -1,0 +1,59 @@
+.title {
+    text-align: center;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.imageSkeleton {
+    aspect-ratio: 295 / 298;
+    border-radius: 20px;
+}
+
+/* Too narrow for four across: cards keep their size and the row scrolls sideways, edge to edge. */
+@media (max-width: 1024px) {
+    .list {
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        grid-auto-columns: 30%;
+        margin-inline: -32px;
+        padding-inline: 32px;
+        scroll-padding-inline: 32px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+
+    .list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .item {
+        scroll-snap-align: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .list {
+        grid-auto-columns: 45%;
+        gap: 16px;
+        margin-inline: -16px;
+        padding-inline: 16px;
+        scroll-padding-inline: 16px;
+    }
+
+    .imageSkeleton {
+        border-radius: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .list {
+        grid-auto-columns: 60%;
+    }
+}

@@ -1,0 +1,39 @@
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+}
+
+.star {
+    width: 18.5px;
+    height: 18.5px;
+    fill: var(--star);
+}
+
+.star .empty {
+    fill: var(--starEmpty);
+}
+
+.max {
+    color: var(--textMuted);
+}
+
+@media (max-width: 768px) {
+    .rating {
+        gap: 11px;
+    }
+
+    .stars {
+        gap: 4px;
+    }
+
+    .star {
+        width: 15px;
+        height: 15px;
+    }
+}

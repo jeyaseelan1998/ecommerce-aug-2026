@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--productBg);
+}
+
+.price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.oldPrice {
+    color: var(--textFaded);
+    text-decoration: line-through;
+}
+
+.badge {
+    padding: 6px 14px;
+    border-radius: 62px;
+    background-color: var(--red10);
+    color: var(--red);
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .image {
+        border-radius: 14px;
+    }
+
+    .price {
+        gap: 5px;
+    }
+
+    .badge {
+        padding: 4px 10px;
+    }
+}

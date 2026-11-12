@@ -5,6 +5,7 @@ import Loader from '../Loader'
 import style from './style.module.css'
 
 // `placeholder` picks what shows while the image loads: 'skeleton', 'spinner' or 'none'.
+// `aspectRatio` (width / height) fixes the box shape instead of following the image's own size.
 export default function Image({
   image,
   alt,
@@ -14,9 +15,12 @@ export default function Image({
   placeholder = 'skeleton',
   children,
   spinnerColor,
+  aspectRatio,
 }) {
   const src = image?.url
-  const ratio = image?.width && image?.height ? (image.height * 100) / image.width : null
+  const ratio = aspectRatio
+    ? 100 / aspectRatio
+    : image?.width && image?.height ? (image.height * 100) / image.width : null
 
   const wrapperRef = useRef(null)
   const [inView, setInView] = useState(false)

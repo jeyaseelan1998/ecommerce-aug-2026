@@ -6,6 +6,10 @@
     padding-top: 100px;
 }
 
+.size64 {
+    padding-top: 64px;
+}
+
 .size48 {
     padding-top: 48px;
 }
@@ -18,7 +22,15 @@
     padding-top: 16px;
 }
 
+.size8 {
+    padding-top: 8px;
+}
+
 @media (max-width: 1240px) {
+    .size64 {
+        padding-top: 58px;
+    }
+
     .size100 {
         padding-top: 90px;
     }
@@ -33,6 +45,10 @@
 }
 
 @media (max-width: 1024px) {
+    .size64 {
+        padding-top: 52px;
+    }
+
     .size100 {
         padding-top: 75px;
     }
@@ -47,6 +63,10 @@
 }
 
 @media (max-width: 768px) {
+    .size64 {
+        padding-top: 48px;
+    }
+
     .size100 {
         padding-top: 60px;
     }
@@ -61,6 +81,10 @@
 }
 
 @media (max-width: 360px) {
+    .size64 {
+        padding-top: 40px;
+    }
+
     .size100 {
         padding-top: 50px;
     }
