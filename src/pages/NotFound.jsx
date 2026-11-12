@@ -6,11 +6,11 @@ import Image from '../Components/Image'
 import Button from '../Components/Button'
 import Spacer from '../Components/Spacer'
 
-import notFoundGif from '../assets/images/404.gif'
+import notFoundImage from '../assets/images/404.svg'
 
 import style from './NotFound.module.css'
 
-const IMAGE = { url: notFoundGif, width: 480, height: 480 }
+const IMAGE = { url: notFoundImage, width: 480, height: 480 }
 
 function NotFound() {
   return (

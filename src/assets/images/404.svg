@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480" role="img" aria-label="A sad empty shopping cart">
+  <style>
+    svg * { transform-box: view-box; }
+    .cart { transform-origin: 240px 240px; animation: bob 2.4s ease-in-out infinite; }
+    .shadow { transform-origin: 240px 392px; animation: shadow 2.4s ease-in-out infinite; }
+    .eye { transform-box: fill-box; transform-origin: center; animation: blink 4s infinite; }
+    .spark { transform-box: fill-box; transform-origin: center; animation: twinkle 2.4s ease-in-out infinite; }
+    .b { animation-delay: -1.2s; }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0) rotate(-2deg); }
+      50% { transform: translateY(-14px) rotate(3deg); }
+    }
+    @keyframes shadow {
+      0%, 100% { transform: scale(1, 1); opacity: 1; }
+      50% { transform: scale(0.85, 1); opacity: 0.6; }
+    }
+    @keyframes twinkle {
+      0%, 100% { transform: scale(0.4); opacity: 0.4; }
+      50% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes blink {
+      0%, 92%, 100% { transform: scaleY(1); }
+      96% { transform: scaleY(0.1); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  <circle cx="240" cy="240" r="180" fill="#FAFAFA"/>
+  <ellipse class="shadow" cx="240" cy="392" rx="95" ry="10" fill="#000" fill-opacity="0.12"/>
+  <g class="cart">
+    <g stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="110,140 170,140 212,300 350,300" fill="none"/>
+      <polygon points="186,186 392,186 358,282 222,282" fill="#fff"/>
+    </g>
+    <ellipse class="eye" cx="262" cy="228" rx="6" ry="7"/>
+    <ellipse class="eye" cx="322" cy="228" rx="6" ry="7"/>
+    <path d="M276,262 Q292,248 308,262" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="238" cy="357" r="14"/>
+    <circle cx="334" cy="357" r="14"/>
+  </g>
+  <g transform="translate(118 110)"><path class="spark" d="M0,-22 Q3,-3 22,0 Q3,3 0,22 Q-3,3 -22,0 Q-3,-3 0,-22Z" fill="#FFC633"/></g>
+  <g transform="translate(372 120)"><path class="spark b" d="M0,-16 Q2,-2 16,0 Q2,2 0,16 Q-2,2 -16,0 Q-2,-2 0,-16Z" fill="#FFC633"/></g>
+  <circle class="spark" cx="380" cy="330" r="8" fill="#FF3333"/>
+  <circle class="spark b" cx="96" cy="300" r="6" fill="#FF3333"/>
+</svg>
